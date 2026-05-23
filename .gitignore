@@ -1,0 +1,39 @@
+# Environment variables - never push these
+.env
+
+# Airflow logs - too large and not useful in GitHub
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Database files
+*.db
+*.sqlite
+
+# Airflow internal files
+airflow.db
+airflow.cfg
+webserver_config.py
+standalone_admin_password.txt
+
+# Temporary files
+*.tmp
+*.temp
+
+# Mac system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker volumes (data persisted locally, not needed in repo)
+postgres_data/
